@@ -1,6 +1,6 @@
 FROM mjgargani/puppeteer:trybe1.0
 
-WORKDIR /
+WORKDIR /app
 
 COPY . .
 
