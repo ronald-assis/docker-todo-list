@@ -1,14 +1,11 @@
 FROM node:14-alpine
 
-WORKDIR /app
+WORKDIR /todo-app/front-end
 
 EXPOSE 3000
 
 COPY . .
 
 ADD ./node_modules.tar.gz ./
-
-
-RUN npm install
 
 ENTRYPOINT ["npm", "start"]
